@@ -9,6 +9,7 @@ import { AccountService } from '../services/account.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+    @Input() test!: () => void;
     @Output() cancelRegister = new EventEmitter();
     model: any = {};
 
